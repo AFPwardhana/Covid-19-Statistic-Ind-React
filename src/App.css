@@ -1,38 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,700&family=Raleway:ital,wght@1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+body {
+  background-color: #f4f4f4;
+}
 .App {
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  /* text-align: center; */
+}
+.back{
+  background-color: #fb4443;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.isi {
+  margin-top: 3.5rem;
+}
+.form-control {
+  border: none;
+  margin: 0 auto 1rem;
+  background-color: #f4f4f4;
+}
+.totalKasus {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+h4,
+h5 {
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-text:last-child {
+  font-size: 1rem;
+  text-align-last: right;
+}
+.results tr[visible="false"],
+.no-result {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.results tr[visible="true"] {
+  display: table-row;
+}
+/* buat scrolling  */
+.my-custom-scrollbar {
+  position: relative;
+  height: 450px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+.p-4 {
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.app_stat {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin-top: 10px;
+  border-radius: 0px;
+  padding: 0.5rem;
+}
+.card h5 {
+  text-align-last: right;
+  font-size: 0.8rem;
+}
+.card p {
+  text-align-last: right;
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extend-bottom {
+  margin-left: -1px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.extend-middle {
+  margin-left: -1px;
+}
+.extend-top {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.peta {
+  height: 250px;
+  width: 100%;
+  background-color: white;
+}
+.peta .leaflet-container {
+  height: 100%;
+}
+
+.info-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.info-container {
+  width: 100px;
+}
+
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 10px;
+  margin-top: 1px;
+}
+
+.infoBox--selected {
+  border-bottom: 5px solid#e8f044 ;
+}
+.infoBox--red {
+  border-color: #CC1034;
+}
+.infoBox--green {
+  border-color: #7dd71d ;
+}
+
+.infoBox--red--Text{
+  color: #CC1034
+}
+.infoBox--green--Text {
+  color: #7dd71d ;
 }
