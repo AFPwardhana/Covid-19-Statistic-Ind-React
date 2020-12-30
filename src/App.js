@@ -21,7 +21,7 @@ export default function App() {
         setSemuaInfo(data.update.total);
       });
   }, []);
-
+  console.log(SemuaInfo , tableData);
   useEffect(() => {
     const getDataProvinsi = async () => {
       fetch(proxyUrl + urlAPI2)
